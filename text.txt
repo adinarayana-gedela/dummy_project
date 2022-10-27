@@ -1,0 +1,5 @@
+AJAX is asynchronous javascript XML.
+ajax is not a programming langauge.
+uses: method GET : data sent from server to browser,
+ method POST : data is sent from browser to server
+ 

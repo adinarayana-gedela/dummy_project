@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //to string method
+        const name1 = ['banana','pineapple','sugarcrane','apple','orange'];
+        document.write(name1.toString() +'<br/>');
+        //to join method
+        const name2 = ['banana','pineapple','sugarcrane','apple','orange'];
+        document.write(name2.join('*')+ '<br/>');
+        //pop method
+        const name3 = ['banana','pineapple','sugarcrane','apple','orange'];
+        
+         document.write(name3 +'<br/>');
+          name3.pop('orange');
+          document.write(name3 + '<br/>')
+
+       //push method;
+       const name4 = ['banana','pineapple','sugarcrane','apple','orange'];
+       document.write(name4 +'<br/>');
+       name4.push('grapes');
+       document.write(name4+'<br/>');
+       //shift method
+       const name5 = ['banana','pineapple','sugarcrane','apple','orange'];
+       document.write(name5+'<br/>');
+       name5.shift('banana');
+       document.write(name5+'<br/>');
+       //unshift method
+       const name6 = ['banana','pineapple','sugarcrane','apple','orange'];
+       document.write(name6+'<br/>');
+       name6.unshift('danimma kaya');
+       document.write(name6+'<br/>');
+       //delete method
+       const name7 = ['banana','pineapple','sugarcrane','apple','orange'];
+       delete name7[2];
+       document.write(name7+'<br/>');
+       document.write(name7[2]+'<br/>');
+       //concate method
+       const name8 = ['banana','pineapple','sugarcrane','apple','orange'];
+       const name9 = ['coconut','cucumber','watermelon','limbu'];
+       document.write(name8.concat(name9)+'<br/>');
+       //splice method
+       const name10 = ['banana','pineapple','sugarcrane','apple','orange'];
+       name10.splice(2,0,'coconut');
+       document.write(name10+'<br/>');
+      // model2
+       const name11 = ['banana','pineapple','sugarcrane','apple','orange'];
+      
+       document.write(name11+'<br/>');
+       let remove = name11.splice(2,2,'kiwi','lemon');
+       document.write(name11+'<br/>');
+       document.write(remove+'<br/>');
+       //model3
+       const name12 = ['banana','pineapple','sugarcrane','apple','orange'];
+       name12.splice(0,2);
+       document.write(name12+'<br/>');
+       //sort method
+       const name13 = ['banana','pineapple','sugarcrane','apple','orange'];
+       name13.sort();
+       document.write(name13+'<br/>');
+       //reverse method
+       const name14 = ['banana','pineapple','sugarcrane','apple','orange'];
+       document.write(name14+'<br/>');
+       name14.reverse();
+       document.write(name14);
+       //forEach method
+       const name15 = ['banana','pineapple','sugarcrane','apple','orange'];
+       let text = '';
+       name15.forEach(myFunction);
+      function myFunction(value,index,array) {
+           text+= '<li>' + value + '</li>'
+       }
+       document.write(text)
+
+
+    </script>
+</body>
+</html>

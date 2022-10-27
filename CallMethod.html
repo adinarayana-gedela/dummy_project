@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+   <script>
+    const room = {
+        name: function() {
+            return this.fname + ' ' + this.lname + ' ' + this.pin
+        }
+    }
+    const room1 = {
+        fname: 'adi',
+        lname: 'gedela',
+        pin: 1234
+    }
+    const room2 = {
+        fname: 'ramu',
+        lname: 'dunga',
+        pin: 54323
+    }
+    const room3 = {
+        fname: 'ramesh',
+        lname: 'bonela',
+        pin: 87678
+    }
+    document.getElementById('demo').innerHTML = room.name.call(room2)
+   </script>
+</body>
+</html>

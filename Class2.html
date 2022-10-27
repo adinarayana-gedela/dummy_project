@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Name {
+            constructor(email,mobile) {
+                this.name5 = email;
+                this.name6 = mobile;
+            }
+            Show() {
+                return this.name5 + ' ' + this.name6
+            }
+        }
+        class Car extends Name {
+            constructor(email,mobile,name,last,age,no) {
+                super(email,mobile);
+               this.name1 = name;
+               this.name2 = last;
+               this.name3 = age;
+               this.name4 = no; 
+            }
+            hoom() {
+              return this.show() + ' ' + this.name2
+            }
+
+        }
+        let car1 = new Car('abcde@gmail.com',76787678,'adi','gedela',27,8678765);
+        document.write(car1.hoom());
+    </script>
+</body>
+</html>

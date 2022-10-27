@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="sendData" id="demo"/>
+    <p id="demo1"></p>
+    <script>
+        let btn = document.getElementById('demo');
+        let data = document.getElementById('demo1')
+        btn.addEventListener('click',loadData)
+
+        function loadData() {
+        let xhp = new XMLHttpRequest();
+        xhp.open('GET','text.txt',true)
+        xhp.send()
+        xhp.onprogress = function() {
+            data.innerHTML = 'Loading....'
+        }
+        xhp.onload = function() {
+            data.innerHTML = xhp.responseText
+        }
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+   .container  {
+     display: flex;
+     background-color: aqua;
+     flex-direction: row;
+     flex-wrap:wrap;
+     justify-content: flex-start;
+   }
+   .container > div {
+    padding: 20px;
+    color: rgb(219, 14, 14);
+    background-color:white ;
+    margin: 10px;
+    font-size: 30px;
+    line-height: 75px;
+    width: 100px;
+   }
+   </style> 
+   
+ 
+</head>
+<body>
+    <div class="container">
+        <div style="flex-shrink: ">1</div>
+        <div style="flex-shrink: 0">2</div>
+        <div style="flex-shrink: ">3</div>
+        <div style="flex-shrink: ">4</div>
+        
+    </div>
+</body>
+</html>

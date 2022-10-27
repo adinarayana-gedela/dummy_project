@@ -1,0 +1,6 @@
+ajax stands for asynchronous javascript and xml,
+ajax is not a programming language,
+ajax is used to send data from server to browser and browser to server,
+ajax is created methods :
+first method is create an object 
+next craete callback function

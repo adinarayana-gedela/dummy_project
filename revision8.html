@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    //forEach method
+    const name = ['banana','orange','apple','grapes','pineapple'];
+    let txt = '';
+   name.forEach(myFunction);
+   function myFunction(value,index,array) {
+       txt+= '<li>' + value + '</li>';
+   }
+   document.write(txt+'<br/>');
+   //map method
+   const name1 = [2,3,2,4,6,7];
+   const name2 =name1.map(item =>item*2);
+   document.write(name2+'<br/>')
+   //model2 
+   const name3 = [9,8,7,6,9,9,8];
+   const name4 = name3.map(fun1);
+   function fun1(value){
+    return value*2
+   }
+   document.write(name4+'<br/>');
+   //filter method
+   const name5 = [7,18,20,24,53,50,31,12,23];
+   const name6 = name5.filter(fun2);
+   function fun2(value,index,array) {
+    return value > 18
+   }
+
+document.write(name6+'<br/>');
+//reduce method 
+const name7 = [9,19,21,42,52,12];
+const name8 = name7.reduce(fun3);
+function fun3(total,value,index,array) {
+    return total + value 
+}
+document.write(name8);
+   
+  </script>
+</body>
+</html>

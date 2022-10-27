@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    * {
+        box-sizing: border-box;
+      
+    }
+    .head {
+        background-color: aqua;
+        text-align: center;
+        padding: 20px;
+        color: rgb(19, 18, 18);
+    }
+    .link {
+        padding: 10px;
+      background-color: lightgray;
+      display: flex;
+    }
+    .link a {
+        text-decoration: none;
+        padding: 10px;
+    }
+    .link a:hover{
+        background-color: brown;
+        color: white;
+        text-align: center;
+
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+     
+    }
+    .container > div {
+      font-size: 20px;
+    }
+    .flex1 {
+        flex:30%;
+        background-color: antiquewhite;
+       
+    }
+    .flex2 {
+        flex: 70%;
+        margin: 10px;
+      
+    }
+    .image {
+        margin: 10px;
+        height: 200px;
+        background-color: cornflowerblue;
+    }
+    .image1 {
+        margin: 10px;
+        height: 100px;
+        background-color: cornflowerblue ;
+    }
+    .footer {
+        text-align: center;
+        background-color: deepskyblue;
+        padding: 10px;
+        font-size: 20px;
+    }
+    @media  screen and (max-width: 700px) {
+        .link,.container {
+          flex-direction: column;
+        }
+    }
+  
+   </style>
+</head>
+<body>
+    <!--header-->
+    <div class="head">
+        <h1>My website</h1>
+        <p>with a flex layout</p>
+    </div>
+    <!--navbar-->
+    <div class="link">
+        <a href="#">link1</a>
+        <a href="#">link2</a>
+        <a href="#">link3</a>
+        <a href="#">link4</a>
+    </div>
+    <!--flex content-->
+    <div class="container">
+        <div class="flex1">
+           <h2>About me</h2>
+           <p>Photo of me:</p>
+           <p class="image">image</p>
+           <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+           <h2>More text of</h2>
+           <p>Lorem ipsum dolor sit ame.</p>
+           <p class="image1">image</p>
+           <p class="image1">image</p>
+           <p class="image1">image</p>
+        </div>
+        <div class="flex2">
+            <h2>Title Heading</h2>
+            <p>Title description, Dec 7, 2017</p>
+            <p class="image">image</p>
+            <p>some text..<br/>
+                Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <h2>Title Heading</h2>
+            <p>Title description, Dec 7, 2017</p>
+           <p class="image">image</p>
+            <p>some text..<br/>
+                Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Footer</h1>
+    </div>
+</body>
+</html>

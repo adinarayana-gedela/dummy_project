@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="load()">Click</button>
+    <script>
+         function load() {
+            var xhp = new XMLHttpRequest();
+            xhp.onload = function() {
+                const x = this.responseText;
+                let text = ' ';
+                for(let i;i<x.length; i++) {
+                    text+= text + x[i] + '<br/>'
+                }
+                //document.getElementById('demo').innerHTML = this.responseText;
+                //document.write(text)
+                
+            }
+            xhp.open('GET','book.txt',true);
+            xhp.send()
+         }
+    </script>
+</body>
+</html>

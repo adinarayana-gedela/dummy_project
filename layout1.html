@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        background-color: rgb(162, 28, 124);
+        text-align: center;
+        color: rgb(22, 231, 43);
+        font-size: 20px;
+        padding: 10px;
+      }
+      nav {
+        float: left;
+        background-color: burlywood;
+        padding: 20px;
+        width: 30%;
+        height: 300px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      article {
+        float: left;
+        width: 70%;
+        padding: 10px;
+       
+        font-size: 20px;
+      }
+      section::after {
+        display: table;
+        clear: both;
+        content: " ";
+      }
+      footer {
+        background-color: forestgreen;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Cities</h2>
+    </header>
+    <section>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>London</h1>
+        <p>London is the capital city of England. It is the most populous 
+            city in the  United Kingdom, 
+            with a metropolitan area of over 13 million inhabitants.</p>
+        <p>Standing on the River Thames, London has been a major settlement 
+            for two millennia, its history going back to its founding by 
+            the Romans, who named it Londinium.</p>
+    </article>
+    </section>
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+</html>

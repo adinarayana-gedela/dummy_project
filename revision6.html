@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create an array element
+        const name = ['BMW','AUDII','NEXA','RANGE ROVER'];
+       document.write(name);
+       //another way to create array element
+        const name1 = [];
+        name1[0] = 'adi';
+        name1[1] = 'narayana';
+        name1[2] = 'eswarao';
+        name1[3] = 'apparao';
+        name1[4] = 'naresh';
+        name1[5] = 'ganesh';
+        document.write(name1 +'<br/>');
+        //accessing array element
+        const name2 = ['BMW','AUDII','NEXA','RANGE ROVER'];
+        
+       document.write(name2[3]+ '<br/>');
+       //changing an array element
+       const name3 = ['BMW','AUDII','NEXA','RANGE ROVER'];
+       name3[0] = 'TATA';
+       document.write(name3+ '<br/>');
+       //length property of array
+       const name4 = ['BMW','AUDII','NEXA','RANGE ROVER'];
+       document.write(name4.length + '<br/>');
+       //looping an array
+       const name5 = ['banana','apple','grapes','pineapple'];
+       let text= '';
+       for(let i=0;i<name5.length;i++) {
+        text+='<li>' + name5[i] + '</li>'
+       }
+       document.write(text);
+    </script>
+</body>
+</html>

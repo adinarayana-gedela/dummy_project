@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    if(new Date().getMinutes()< 39) {
+        document.write('good day');
+    }
+    else if(new Date().getMinutes()< 40) { 
+        document.write('is normal day')
+    }
+     else {
+        document.write('evening day'+ '<br/>')
+    }
+    //switch statement
+    let day;
+    switch(new Date().getDay()) {
+        case 0: 
+        day: 'sunday';
+        break;
+        case 1:
+            day = 'monday';
+            break;
+        case 2:
+            day = 'tueday';
+            break;
+        case 3 :
+            day = 'wedsday'
+            break;
+       // default:
+            day = 'no more days'
+
+
+    }
+    document.write(day);
+        
+    </script>
+</body>
+</html>
