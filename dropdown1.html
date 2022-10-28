@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown2 {
+            background-color: coral;
+            color: white;
+            text-align: center;
+            padding: 15px 25px;
+            cursor: pointer;
+            border: none;
+        }
+        .dropdown1 {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown3 {
+            display: none;
+            position: absolute;
+            background-color: aqua;
+            min-width: 100px;
+            z-index: 1;
+        }
+        .dropdown3 a {
+            display: block;
+            color:black;
+            text-decoration: none;
+            padding: 12px 16px;
+        }
+        .dropdown3 a:hover {
+            background-color: blue;
+        }
+        .dropdown1:hover .dropdown3 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown1">
+        <button type="button" class="dropdown2">Dropdown</button>
+        <div class="dropdown3">
+            <a href="#">link1</a>
+            <a href="#">link2</a>
+            <a href="#">link3</a>
+        </div>
+    </div>
+</body>
+</html>
