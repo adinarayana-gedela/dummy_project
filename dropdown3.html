@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        ul {
+            list-style-type: none;
+            background-color: lightgray;
+            margin: 0px;
+            padding: 0px;
+            overflow:hidden
+        }
+        li {
+            float:left
+        }
+        li a,.dropdown2 {
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px 16px;
+            text-align: center;
+        }
+        li a:hover {
+            background-color: brown;
+            color: white;
+        } 
+        .dropdown1:hover .dropdown3 {
+            background-color: burlywood;
+        }
+        li.dropdown1 {
+            display: inline-block;
+        }
+        .dropdown3 {
+            display: none;
+            background-color: aqua;
+            min-width: 120px;
+            position: absolute;
+            z-index: 1;
+        }
+        .dropdown3 a {
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+            color: black;
+            text-align: left;
+        }
+        .dropdown3 a:hover {
+            background-color: blueviolet;
+        }
+        .dropdown1:hover .dropdown3 {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown1">
+            <a href="#" class="dropdown2">dropdown</a>
+            <div class="dropdown3">
+                <a href="#">link1</a>
+                <a href="#">link2</a>
+                <a href="#">link3</a>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
