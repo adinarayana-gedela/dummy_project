@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>class method</h2>
+    <script>
+        class Car {
+            constructor(name,year) {
+              this.na = name;
+              this.ye = year;
+            }
+        }
+        const myCar = new Car("BMW",1969);
+        document.write(myCar.na+ " " +myCar.ye);
+    </script>
+    <h2>another example</h2>
+    <script>
+        class Adi {
+            constructor(n,p,r) {
+              this.name = n;
+              this.price = p;
+              this.ram = r;
+            }
+        }
+        const mobile = new Adi("realme","16000","8gb");
+        console.log(mobile);
+        const mobile1 = new Adi("redme","20000","10gb");
+        console.log(mobile1);
+    </script>
+    <h2>class inheritance</h2>
+    <script>
+        class Goom {
+            constructor(cou) {
+                this.country = cou;
+            }
+            show1() {
+                return this.country
+            }
+        }
+        class Narayana extends Goom {
+            constructor(cou,na,ye) {
+                super(cou)
+                this.name = na;
+                this.year = ye;
+            }
+            show() {
+                return this.show1() + " " + this.name + " " + this.year
+            }
+        }
+        const room = new Narayana("germany","audi","1989");
+        document.write(room.show());
+        
+    </script>
+</body>
+</html>

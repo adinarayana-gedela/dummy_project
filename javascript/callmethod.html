@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>call() method is uses on different objects</p>
+    <script>
+     /*const obj = {
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+        }
+         }
+     const obj1 = {
+        firstName: 'adinarayana',
+        lastName: "gedela"
+     } 
+     const obj2 = {
+        firstName: 'ramesh',
+        lastName: "bonela"
+     } 
+     document.write(obj.fullName.call(obj1));*/
+
+    </script>
+    <script>
+         const obj3 = {
+        fullName: function(village,mandalam) {
+            return this.firstName + " " + this.lastName + " ," + village + ","+ mandalam
+        }
+         }
+     const obj4 = {
+        firstName: 'adinarayana',
+        lastName: "gedela"
+     } 
+     const obj5 = {
+        firstName: 'ramesh',
+        lastName: "bonela"
+     } 
+     document.write(obj3.fullName.call(obj5,"mandavakuriti","santhakaviti"));
+    </script>
+    <h2>Apply() method is same as call method but apply method take arguments an array way</h2>
+    <script>
+         const meth1 = {
+        fullName: function(city,country) {
+            return this.firstName + " " + this.lastName + " ," + city + "," + country;
+        }
+         }
+     const meth2 = {
+        firstName: 'adinarayana',
+        lastName: "gedela"
+     } 
+     const meth3 = {
+        firstName: 'ramesh',
+        lastName: "bonela"
+     } 
+     document.write(meth1.fullName.apply(meth2,["rajam","india"]));
+    </script>
+</body>
+</html>
+

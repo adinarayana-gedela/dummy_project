@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>bind() method is obj1 is  borrows the fullName method from obj</p>
+    <script>
+         const obj = {
+            firstName: "mahesh",
+            lastName: "ganala",
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+        }
+         }
+     const obj1 = {
+        firstName: 'adinarayana',
+        lastName: "gedela"
+     } 
+     const obj2 = {
+        firstName: 'ramesh',
+        lastName: "bonela"
+     } 
+     let name = obj.fullName.bind(obj1)
+     document.write(name());
+    </script>
+    <p id="demo">this is paragraph</p>
+    <script>
+        const obj3 = {
+            firstName: 'adinarayana',
+        lastName: "gedela",
+        fullName: function() {
+            let x = document.getElementById("demo")
+          x.innerHTML = this.firstName + " " + this.lastName;
+        }
+         }
+      
+    
+     obj3.fullName(); 
+    </script>
+    <p id="demo1">this is paragraph2</p>
+    <script>
+          const obj4 = {
+            firstName: 'adinarayana',
+        lastName: "gedela",
+        fullName: function() {
+            let x = document.getElementById("demo1")
+          x.innerHTML = this.firstName + " " + this.lastName;
+        }
+         }
+      let room = obj4.fullName.bind(obj4);
+       setTimeout(room,3000)
+    
+     
+    </script>
+</body>
+</html>

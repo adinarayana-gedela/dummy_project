@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    const obj = {
+        fname: "adinarayana",
+        lname: "gedela",
+        rollno: 1234,
+        bloodg: "+O"
+    }
+    obj.mole = "right hand";
+    obj["mole1"] = "left hand";
+    obj.rollno = 765433;
+    obj["bloodg"] = "-O";
+    //delete obj.fname;
+    document.write(obj.fname);
+    console.log(obj);
+   </script>
+   <h2>for in method</h2>
+   <script>
+      const obj1 = {
+        fname: "adinarayana",
+        lname: "gedela",
+        rollno: 1234,
+        bloodg: "+O"
+    }
+    obj1.mole = "right hand";
+    obj1["mole1"] = "left hand";
+    obj1.rollno = 765433;
+    obj1["bloodg"] = "-O";
+    let text = "";
+    for(let x in obj1) {
+        text+= obj[x] + "<br/>"
+    }
+    //console.log(text);
+    document.write(text);
+   </script>
+</body>
+</html>
