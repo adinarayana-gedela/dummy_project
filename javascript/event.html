@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="myFun1()">
+    <p id="demo">this is paragraph</p>
+    <p id="demo1">this is paragraph</p>
+    <p id="demo2">this is paragraph</p>
+    <p id="demo3">this is paragraph</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'hello world'">Click</button>
+    
+    <button type="button" onclick="myFun()">Click</button>
+    
+    <!--<button type="button" onclick="myFun1()">Cookies</button>-->
+    <script>
+         function myFun() {
+            document.getElementById("demo1").innerHTML = "hello java script";
+            document.getElementById("demo2").innerHTML = Date();
+         } 
+    </script>
+    <script>
+        function myFun1() {
+            let text = " ";
+            if(navigator.cookieEnabled == true) {
+                text+= "Cookies are enabled";
+            }
+            else {
+                text+= 'Cookies are not enabled';
+            }
+            document.getElementById("demo3").innerHTML = text;
+        }
+
+    </script>
+</body>
+</html>
