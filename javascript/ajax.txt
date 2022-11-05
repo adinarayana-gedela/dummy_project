@@ -1,0 +1,9 @@
+<div>ajax stands for asynchronous javascript and xml</div>
+<div>ajax is not a programming language</div>
+<div>ajax method is used to exchange the data with a web server, and upadating parts of an webpage without reloading the entire page
+</div>
+<div>ajax request can be send in three steps</div>
+<div>create a xmlhhprequest()</div>
+<div>to create open() method</div>
+<div> to create send() method</div>
+<div>ajax file extension is .txt,.xml</div>
